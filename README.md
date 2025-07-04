@@ -1,10 +1,5 @@
 # 🎯 AI Ad Rewriting Agent
 
-### 👤 Author  
-**Lakavath Raghuram**  
-📧 lakavath22bcs129@iiitkottayam.ac.in | lakavahraghuram28@gmail.com  
-📱 8096516968  
-
 ---
 
 ### 📝 Project Objective
@@ -39,7 +34,7 @@ ad-agent/
 │   └── rewrite_prompt.txt
 ├── requirements.txt
 └── README.md
-
+```
 ## Install Dependencies
 
 pip install -r requirements.txt
