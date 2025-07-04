@@ -1,38 +1,42 @@
-# AI Ad Rewriting Agent
+# 🎯 AI Ad Rewriting Agent
 
-## Overview
-
-This project is a **FastAPI-based AI agent** that rewrites user-uploaded ad text based on a desired **tone** (e.g., `fun`, `professional`) and **target platform** (e.g., `Instagram`, `LinkedIn`).
-
-It leverages:
-- OpenRouter (Claude 3 or OpenAI-compatible APIs)
-- JSON-based Knowledge Graph for tone/platform best practices
-- Modular prompt logic
-- ChromaDB-ready vector layer (for future blog search)
+### 👤 Author  
+**Lakavath Raghuram**  
+📧 lakavath22bcs129@iiitkottayam.ac.in | lakavahraghuram28@gmail.com  
+📱 8096516968  
 
 ---
 
-## Features
+### 📝 Project Objective
 
-- Rewrite ads with tone and platform guidance
-- Structured tone-to-platform prompt injection
-- Expose the logic via `/run-agent` FastAPI endpoint
-- Future-ready for vector search (marketing blog RAG)
-- Works with OpenAI or Claude via OpenRouter
+To design and prototype a **lightweight LLM-powered agent** that rewrites marketing ad text using a specified **tone** (e.g., fun, professional) and optimizes it for a target **platform** (e.g., Instagram, LinkedIn).  
+The goal is to enable brands to adapt a single message into multiple contexts with improved engagement.
 
 ---
 
-## Project Structure
+### 🏗️ Architecture & Stack
 
+- **Backend:** FastAPI (`POST /run-agent`)
+- **LLM Provider:** Claude 3 Haiku via OpenRouter
+- **Prompt Logic:** Dynamic prompt injection using tone + platform
+- **Knowledge Representation:** JSON-based tone-to-platform best practices
+- **Future Components:** ChromaDB (blog RAG), LangGraph (memory)
+- **Local Testing:** `uvicorn app:app --reload`
+
+---
+
+### 📁 Project Structure
+
+```yaml
 ad-agent/
-├── app.py # FastAPI backend entry
-├── agent.py # LLM interaction logic
-├── graph_kg.py # Knowledge Graph (tone/platform styles)
-├── vector_store.py # Vector DB integration (Chroma)
+├── app.py                  # FastAPI backend entry
+├── agent.py                # Prompt + LLM interaction
+├── graph_kg.py             # Knowledge Graph loader
+├── vector_store.py         # (Future) ChromaDB integration
 ├── data/
-│ └── tone_best_practices.json
+│   └── tone_best_practices.json
 ├── prompts/
-│ └── rewrite_prompt.txt
+│   └── rewrite_prompt.txt
 ├── requirements.txt
 └── README.md
 
