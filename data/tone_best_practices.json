@@ -1,0 +1,14 @@
+{
+  "fun": {
+    "Instagram": "Use emojis, vibrant visuals, and casual phrases.",
+    "Facebook": "Tell stories, use humor, and add relatable content."
+  },
+  "professional": {
+    "LinkedIn": "Use formal tone, highlight metrics and achievements.",
+    "Twitter": "Share concise, factual updates with industry hashtags."
+  },
+  "witty": {
+    "Twitter": "Use puns, clever wordplay, and trending memes.",
+    "Instagram": "Pair smart humor with visual metaphors."
+  }
+}

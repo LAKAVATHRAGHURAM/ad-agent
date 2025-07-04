@@ -1,0 +1,16 @@
+You are an expert ad copywriter. Rewrite the following advertisement text to match the given tone and optimize it for the specified platform.
+
+Ad Text: {ad_text}
+
+Tone: {tone}
+Platform: {platform}
+
+Refer to the following justification and best practices while rewriting:
+
+Justification:
+{justification}
+
+Best Practices:
+{best_practices}
+
+Output the rewritten ad text only.
